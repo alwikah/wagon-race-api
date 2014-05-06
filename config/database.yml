@@ -6,4 +6,5 @@ development:
 
 production:
   adapter: postgresql
+  database: lewagon_race_api
   encoding: unicode

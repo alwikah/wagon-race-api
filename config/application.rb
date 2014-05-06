@@ -12,7 +12,7 @@ APP_ROOT = Pathname.new(File.expand_path(File.join(File.dirname(__FILE__), '..')
 DB_CONFIG = YAML::load(ERB.new(File.read(File.join(File.dirname(__FILE__),'database.yml'))).result)
 
 # gets the path of the database
-DB_PATH =  APP_ROOT.join(DB_CONFIG["development"]["database"])
+DB_PATH =  APP_ROOT.join(DB_CONFIG["production"]["database"])
 
 ActiveRecord::Base.configurations = DB_CONFIG
-ActiveRecord::Base.establish_connection('development')
+ActiveRecord::Base.establish_connection('production')

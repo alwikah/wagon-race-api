@@ -3,6 +3,7 @@ require 'active_record'
 require 'pathname'
 require 'open-uri'
 require 'yaml'
+require 'erb'
 
 # gets root of current directory
 APP_ROOT = Pathname.new(File.expand_path(File.join(File.dirname(__FILE__), '..')))

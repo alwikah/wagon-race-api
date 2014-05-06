@@ -1,8 +1,6 @@
 require 'pg'
 require 'active_record'
 require 'pathname'
-require 'nokogiri'
-require 'faker'
 require 'open-uri'
 require 'yaml'
 

@@ -1,4 +1,4 @@
-require 'sqlite3'
+require 'pg'
 require 'active_record'
 require 'pathname'
 require 'nokogiri'
@@ -17,5 +17,3 @@ DB_PATH =  APP_ROOT.join(DB_CONFIG["development"]["database"])
 
 ActiveRecord::Base.configurations = DB_CONFIG
 ActiveRecord::Base.establish_connection('development')
-
-

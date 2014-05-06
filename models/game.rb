@@ -14,6 +14,7 @@ class Game < ActiveRecord::Base
       session_id: self.session.id,
       game: {
         id: self.id,
+        winner: self.winner,
         status: self.status,
         elapsed_time: self.elapsed_time || 0,
         players: self.players.collect { |player| { id: player.id, name: player.name } }

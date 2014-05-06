@@ -33,6 +33,7 @@ module WagonRace
     post '/game/:id/results' do
       game_id = params[:id]
       game = Game.find(game_id)
+      game.status = 'completed'
       game.player_id = Player.find(params[:winner]).id
       game.elapsed_time = params[:elapsed_time]
       game.save!

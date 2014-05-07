@@ -6,7 +6,7 @@ class Game < ActiveRecord::Base
   has_many :players
   belongs_to :session
 
-  has_one :winner, through: :player
+  has_one :winner, class_name: 'Player'
 
   def to_hash
     {

@@ -4,7 +4,7 @@ class CreateGame < ActiveRecord::Migration
       t.string  :status, default: 'started'
       t.integer :elapsed_time
 
-      t.integer :player_id
+      t.integer :winner_id
       t.integer :session_id
 
       t.timestamps

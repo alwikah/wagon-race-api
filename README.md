@@ -153,7 +153,7 @@ It returns an Hash with a list of the games ids.
   "session_id": 2,
   "games": {  
     "started": [4],
-    "completed": [1, 2,  3
+    "completed": [1, 2, 3]
     ]
   }
 }

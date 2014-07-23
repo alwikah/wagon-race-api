@@ -18,11 +18,12 @@ GET `/session/create`
 Returns a JSON Object (~ Hash) containing the `id` of the session.
 
 **Example**:
+
 ```javascript
 {  
-  "id":2,
-  "created_at":"2014-07-23T13:50:25.993Z",
-  "updated_at":"2014-07-23T13:50:25.993Z"
+  "id": 2,
+  "created_at": "2014-07-23T13:50:25.993Z",
+  "updated_at": "2014-07-23T13:50:25.993Z"
 }
 ```
 
@@ -42,8 +43,10 @@ The data provided should be:
 }
 ```
 
-It returns an Hash of informations containing the id of the game and the users.
+It returns an Hash of informations containing the id of the game and the users:
+
 **Example**:
+
 ```javascript
 {  
    "session_id": 2,
@@ -81,6 +84,7 @@ You must POST with the following data:
 ```
 
 It returns an Hash of informations about the Game:
+
 **Example**:
 ```javascript
 {  
@@ -113,6 +117,7 @@ GET `/game/1/results`
 
 
 It returns an Hash of informations about the Game:
+
 **Example**:
 ```javascript
 {  
@@ -141,12 +146,15 @@ GET `session/:id/games`
 Where `:id` is the id of the session.
 
 It returns an Hash with a list of the games ids.
+
+**Example**:
 ```javascript
 {  
   "session_id": 2,
   "games": {  
     "started": [4],
-    "completed": [1, 2, 3]
+    "completed": [1, 2,  3
+    ]
   }
 }
 ```
